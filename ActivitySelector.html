@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Night Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Date Night Selection</h1>
+        <div class="buttons">
+            <button onclick="selectOption('goOut')">Go Out</button>
+            <button onclick="selectOption('stayIn')">Stay In</button>
+            <button onclick="selectOption('randomize')">Randomize</button>
+        </div>
+
+        <div id="goOutSection" class="selection-section" style="display:none;">
+            <h2>Restaurant Options</h2>
+            <ul id="restaurantList"></ul>
+            <button onclick="randomizeOption('restaurant')">Randomize Restaurant</button>
+        </div>
+
+        <div id="stayInSection" class="selection-section" style="display:none;">
+            <h2>Recipe Options</h2>
+            <ul id="recipeList"></ul>
+            <button onclick="randomizeOption('recipe')">Randomize Recipe</button>
+        </div>
+
+        <div id="activitySection" class="selection-section" style="display:none;">
+            <h2>Select an Activity</h2>
+            <ul id="activityList"></ul>
+            <button onclick="randomizeOption('activity')">Randomize Activity</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
